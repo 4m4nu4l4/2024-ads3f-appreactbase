@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Image, Row } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 
 export default function Produto() {
@@ -18,8 +18,11 @@ export default function Produto() {
       <Row>
         <Col>
           <div>
+            <Image src={produto?.thumbnail} />
             <h1>{produto?.title}</h1>
             <div>{produto?.description}</div>
+
+
           </div>
         </Col>
       </Row>
