@@ -21,6 +21,12 @@ export default function Header() {
           <Navbar.Text as={Link} to="/sobre">
             Sobre
           </Navbar.Text>
+          <Navbar.Text as={Link} to="/noticias">
+            Notícias
+          </Navbar.Text>
+          <Navbar.Text as={Link} to="/produtos">
+            Produtos
+          </Navbar.Text>
           <Navbar.Text as={Link} to="/contato">
             Contato
           </Navbar.Text>
