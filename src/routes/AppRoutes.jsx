@@ -3,8 +3,6 @@ import Inicial from "../pages/Inicial";
 import Sobre from "../pages/Sobre";
 import Contato from "../pages/Contato";
 import Body from "../layout/Body";
-import Noticias from "../pages/Noticias";
-import Noticia from "../pages/Noticia";
 import Produtos from "../pages/Produtos";
 import Produto from "../pages/Produto";
 
