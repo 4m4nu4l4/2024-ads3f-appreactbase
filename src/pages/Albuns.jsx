@@ -8,7 +8,7 @@ const Albums = () => {
     <Container>
       <Row className="g-4">
         {/* Mapeie seus dados de álbuns e renderize os cartões */}
-        <Col>
+        <Col >
           <Card>
             <Card.Img variant="top" src="url-da-imagem-placeholder" />
             <Card.Body>
