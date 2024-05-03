@@ -1,34 +1,32 @@
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import { CardNoticia } from "../components/CardNoticia";
 import { Link } from "react-router-dom";
+import ProductCard from "../components/Produto";
 
 export default function Produtos() {
   const [produtos, setProdutos] = useState([]);
 
-  const url = "https://dummyjson.com/products";
-  useState(() => {
+ /* useEffect(() => {
+    const url = "https://dummyjson.com/products";
     fetch(url)
       .then((resposta) => resposta.json())
       .then((data) => {
         setProdutos(data.products);
       });
   }, []);
-
+*/
   return (
     <Container>
       <Row>
-        <Col>Produtos</Col>
+        <Col>
+          <h2>Produtos</h2>
+        </Col>
       </Row>
       <Row>
         {produtos.map((produto, index) => (
           <Col lg={4} xs={12} key={index}>
             <Link to={`/produto/${produto.id}`}>
-              <CardNoticia
-                title={produto.title}
-                img={produto.thumbnail}
-                text={produto.text}
-              />
+              <ProductCard produto={produto} />
             </Link>
           </Col>
         ))}

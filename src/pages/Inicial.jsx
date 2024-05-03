@@ -1,15 +1,18 @@
+import { Container } from "react-bootstrap";
 import Album from "../components/Album";
 
 export default function Inicial() {
   return (
-    <div>
-      <h1>Seja bem vindo ao nosso APP</h1>
-      <p>Escolha os produtos que deseja comprar</p>
-      <Album
-        title="Album maravilhoso"
-        text="Descrição maravilhosa do nosso album"
-        img="https://picsum.photos/300/400"
-      />
-    </div>
+    <Container>
+      <div style={{ textAlign: "center", marginTop: "20px" }}>
+        <h1 style={{ fontSize: "2.5rem", color: "#333" }}>Hi Giiirl 💅🏻</h1>
+        <p style={{ fontSize: "1.2rem", color: "#666" }}>Bem vinda ao nosso site para as viciadas em pintar a unha em casa!</p>
+        <Album
+          title="Album maravilhoso"
+          text="Descrição maravilhosa do nosso álbum"
+          //img="https://picsum.photos/300/400"
+        />
+      </div>
+    </Container>
   );
 }

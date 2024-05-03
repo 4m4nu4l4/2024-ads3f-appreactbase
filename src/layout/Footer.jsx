@@ -2,23 +2,16 @@ import { Col, Container, Row } from "react-bootstrap";
 
 export default function Footer() {
   return (
-    <Container>
+    <Container style={{ backgroundColor: "#f0f0f0"}}>
       <Row>
-        <Col lg={4} sm={12}>
+        <Col>
           <div>
-            <h4>Sobre a empresa</h4>
-            <p>Av Visconde de Taunay 666666</p>
-          </div>
-        </Col>
-        <Col lg={8} sm={12}>
-          <div>
-            <h4>Redes sociais</h4>
+            <h4>Segue a gente nas redes sociais 💛</h4>
             <p>
-              <a href="//facebook.com" target="_blank">
-                Facebook
+              <a href="//Instagram.com" target="_blank">
+                @Manu_Nail_arts
               </a>
             </p>
-            <p>Instagram</p>
           </div>
         </Col>
       </Row>

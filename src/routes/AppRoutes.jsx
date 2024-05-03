@@ -4,7 +4,6 @@ import Sobre from "../pages/Sobre";
 import Contato from "../pages/Contato";
 import Body from "../layout/Body";
 import Produtos from "../pages/Produtos";
-import Produto from "../pages/Produto";
 
 export default function AppRoutes() {
   return (
@@ -16,7 +15,6 @@ export default function AppRoutes() {
           <Route path="/" element={<Inicial />} />
           <Route path="/sobre" element={<Sobre />} />
           <Route path="/produtos" element={<Produtos />} />
-          <Route path="/produto/:id" element={<Produto />} />
           <Route path="/contato" element={<Contato />} />
         </Route>
       </Routes>
