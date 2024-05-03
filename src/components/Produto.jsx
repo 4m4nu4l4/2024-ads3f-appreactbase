@@ -1,51 +1,84 @@
-/*import React from "react";
-import { Card } from "react-bootstrap";
+import React from "react";
+import { Card, Button } from "react-bootstrap";
 
-const ProductCard = ({ produto }) => {
+const Produtos = ({ produto }) => {
   return (
-    <section class="py-5 bg-body-tertiary">
-      <div class="container">
-        <div class="row row-cols-1 row-cols-sm-2 row cols-md-3 g-3">
-          <div class="card shadow-sm">
-            <div class="col">
-              <Card style={{ width: "18rem" }}>
+    <section className="py-5 bg-body-tertiary">
+      <div className="container">
+        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" style={{marginBottom: '10px'}}>
 
-                <Card.Img variant="top" src="holder.js/100px180" />
-                <Card.Body>
+          <div className="col">
 
-                  <Card.Title>Card Title</Card.Title>
+            <Card className="shadow-sm" style={{ width: "18rem", marginBottom: '30px' }}>
+              <Card.Img variant="top" src="https://i.pinimg.com/564x/4a/bc/09/4abc09728f2ad0e65f4ff2eb1eee25d5.jpg" />
+              <Card.Body>
+                <Card.Title>Princess Nail</Card.Title>
+                <Card.Text>
+                  Essas são as unhas que foram usadas pela princesa Diana em toda sua vida
+                </Card.Text>
+                <Button variant="primary">Buy Here</Button>
+              </Card.Body>
+            </Card>
 
-                  <Card.Text>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </Card.Text>
+            <Card className="shadow-sm" style={{ width: "18rem", marginBottom: '30px' }}>
+              <Card.Img variant="top" src="https://i.pinimg.com/564x/48/bd/2e/48bd2e5567e4d3464a1e5a9836a5c7d9.jpg" />
+              <Card.Body>
+                <Card.Title>Princess Nail</Card.Title>
+                <Card.Text>
+                Essas são as unhas que foram usadas pela princesa Diana em toda sua vida
+                </Card.Text>
+                <Button variant="primary">Buy Here</Button>
+              </Card.Body>
+            </Card>
 
-                  <Button variant="primary">Go somewhere</Button>
-                </Card.Body>
-              </Card>
-            </div>
+            <Card className="shadow-sm" style={{ width: "18rem", marginBottom: '30px' }}>
+              <Card.Img variant="top" src="https://i.pinimg.com/564x/4a/bc/09/4abc09728f2ad0e65f4ff2eb1eee25d5.jpg" />
+              <Card.Body>
+                <Card.Title>Princess Nail</Card.Title>
+                <Card.Text>
+                Essas são as unhas que foram usadas pela princesa Diana em toda sua vida
+                </Card.Text>
+                <Button variant="primary">Buy Here</Button>
+              </Card.Body>
+            </Card>
+
+            <Card className="shadow-sm" style={{ width: "18rem", marginBottom: '30px' }}>
+              <Card.Img variant="top" src="https://i.pinimg.com/564x/4a/bc/09/4abc09728f2ad0e65f4ff2eb1eee25d5.jpg" />
+              <Card.Body>
+                <Card.Title>Princess Nail</Card.Title>
+                <Card.Text>
+                Essas são as unhas que foram usadas pela princesa Diana em toda sua vida
+                </Card.Text>
+                <Button variant="primary">Buy Here</Button>
+              </Card.Body>
+            </Card>
+
+            <Card className="shadow-sm" style={{ width: "18rem", marginBottom: '30px' }}>
+              <Card.Img variant="top" src="https://i.pinimg.com/564x/4a/bc/09/4abc09728f2ad0e65f4ff2eb1eee25d5.jpg" />
+              <Card.Body>
+                <Card.Title>Princess Nail</Card.Title>
+                <Card.Text>
+                Essas são as unhas que foram usadas pela princesa Diana em toda sua vida
+                </Card.Text>
+                <Button variant="primary">Buy Here</Button>
+              </Card.Body>
+            </Card>
+
+            <Card className="shadow-sm" style={{ width: "18rem", marginBottom: '30px'}}>
+              <Card.Img variant="top" src="https://i.pinimg.com/564x/4a/bc/09/4abc09728f2ad0e65f4ff2eb1eee25d5.jpg" />
+              <Card.Body>
+                <Card.Title>Princess Nail</Card.Title>
+                <Card.Text>
+                Essas são as unhas que foram usadas pela princesa Diana em toda sua vida
+                </Card.Text>
+                <Button variant="primary">Buy Here</Button>
+              </Card.Body>
+            </Card>
+
           </div>
         </div>
       </div>
     </section>
-  );
-};
-
-export default ProductCard;*/
-import React from "react";
-import { Card, Button } from "react-bootstrap";
-import Produtos from "../pages/Produtos";
-
-const Produtos = ({ produto }) => {
-  return (
-    <Card style={{ width: "18rem" }} className="shadow-sm">
-      <Card.Img variant="top" src="https://i.pinimg.com/564x/4a/bc/09/4abc09728f2ad0e65f4ff2eb1eee25d5.jpg" />
-      <Card.Body>
-        <Card.Title>oi</Card.Title>
-        <Card.Text>oi</Card.Text>
-        <Button variant="primary">Ver detalhes</Button>
-      </Card.Body>
-    </Card>
   );
 };
 

@@ -45,7 +45,7 @@ export default function Header() {
             </li>
             <li className="nav-item">
               <Navbar.Text as={Link} to="/contato" className="nav-link">
-                Contato
+                Login
               </Navbar.Text>
             </li>
           </ul>
